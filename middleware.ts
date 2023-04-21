@@ -19,5 +19,9 @@ export default async function middleware(request: Request) {
       status: 403,
       headers: { "Cache-Control": "no-cache" },
     });
-  }  
+  }
+  
+  return next({
+    headers: { "x-your-ip-address": ip || "unknown" },
+  });
 }
