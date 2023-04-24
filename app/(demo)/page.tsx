@@ -10,7 +10,7 @@ function DemoPage() {
   return (
     <div className="w-full max-w-3xl mx-auto mt-8">
       <div className="text-center mb-10">
-        <h2 className="mb-4 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 className="mb-6 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           Simple IP Blocker
         </h2>
         <p className="leading-7 mb-3">
@@ -30,12 +30,12 @@ function DemoPage() {
           >
             Edge Config
           </Link>
-          , we&apos;re able to execute functions at the edge level and act on
-          mid-flight requests instantly. This example uses edge-config and
-          middleware to store the rules that allows us to block certain IPs.
+          , you can now perform functions at the edge level and take immediate
+          action on in-flight requests. For example, you can quickly block
+          certain IPs by leveraging edge-config to store a list of IPs to block.
         </p>
         <p className="leading-7 ">
-          Add IPs to block them below, next go to{" "}
+        Add the IPs you wish to block and then navigate to the{" "}
           <Link
             href="/am-i-blocked"
             className="text-blue-500 hover:underline"
@@ -43,7 +43,7 @@ function DemoPage() {
           >
             /am-i-blocked
           </Link>{" "}
-          under the IP and it&apos;ll be blocked.
+          endpoint under that IP. The request will be intercepted at the edge and the IP will be blocked.
         </p>
         <div className="mt-8">
           Your IP is:
