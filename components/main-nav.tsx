@@ -41,11 +41,13 @@ export function MainNav({ children }: MainNavProps) {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <a href={`${siteConfig.links.github}#readme`} target="_blank">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Documentation
-                </NavigationMenuLink>
-              </a>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle()}
+                href={`${siteConfig.links.github}#readme`}
+                target="_blank"
+              >
+                Documentation
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
