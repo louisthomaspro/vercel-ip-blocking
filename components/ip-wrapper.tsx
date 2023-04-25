@@ -29,6 +29,7 @@ export default function IpWrapper({ ip }: { ip: string }) {
         alt="Copy IP address"
         width={12}
         height={12}
+        style={{ width: "12px", height: "12px" }}
         className="inline-block ml-2 opacity-90"
       />
       {copied && (
