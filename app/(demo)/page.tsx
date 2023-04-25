@@ -38,7 +38,7 @@ function DemoPage() {
         Add the IPs you wish to block and then navigate to the{" "}
           <Link
             href="/am-i-blocked"
-            className="text-blue-500 hover:underline"
+            className="text-blue-600 hover:underline"
             prefetch={false}
           >
             /am-i-blocked

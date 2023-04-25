@@ -17,7 +17,7 @@ export default function IpWrapper({ ip }: { ip: string }) {
 
   return (
     <span
-      className="relative cursor-pointer ml-2 bg-gray-100 hover:bg-gray-200 text-blue-500 py-1 px-3 rounded whitespace-nowrap inline-flex items-center"
+      className="relative cursor-pointer ml-2 bg-gray-100 hover:bg-gray-200 text-blue-600 py-1 px-3 rounded whitespace-nowrap inline-flex items-center"
       onClick={() => {
         navigator.clipboard.writeText(ip);
         setCopied(true);
